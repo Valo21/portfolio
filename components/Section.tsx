@@ -11,7 +11,7 @@ export default function Section(props : SectionProps) {
   })
     
   return (
-    <div id={props.id}>
+    <div id={props.id} className='w-full'>
       <motion.div
         ref={ref}
         className='text-center text-lg font-semibold mb-2'
