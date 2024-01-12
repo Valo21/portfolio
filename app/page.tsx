@@ -9,13 +9,13 @@ import SkillsSection from '@/components/SkillsSection';
 export const revalidate = 0;
 
 async function getEducationItems(){
-  const res = await fetch('http://localhost:3000/api/education');
+  const res = await fetch(`${process.env.BASE_URL}/api/education`);
   const items = await res.json();
   return items;
 }
 
 async function getSkills(){
-  const res = await fetch('http://localhost:3000/api/skills');
+  const res = await fetch(`${process.env.BASE_URL}/api/skills`);
   const skills = await res.json();
   return skills;
 }
