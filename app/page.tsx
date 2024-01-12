@@ -1,30 +1,6 @@
 import Image from 'next/image'
-import Link from 'next/link'
-import Card from '@/components/Card';
-import Navbar from '@/components/Navbar';
-import ProfilePicture from '@/components/ProfilePicture';
-import EducationSection from '@/components/EducationSection';
-import SkillsSection from '@/components/SkillsSection';
 
-export const revalidate = 0;
-
-async function getEducationItems(){
-  const res = await fetch('http://localhost:3000/api/education');
-  const items = await res.json();
-  return items;
-}
-
-async function getSkills(){
-  const res = await fetch('http://localhost:3000/api/skills');
-  const skills = await res.json();
-  return skills;
-}
-
-export default async function Home() {
-
-  const items = await getEducationItems();
-  const skills = await getSkills();
-
+export default function Home() {
   return (
     <div className='mx-6 flex items-center flex-col'>
       <Navbar/>
