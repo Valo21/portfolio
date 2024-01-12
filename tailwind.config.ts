@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'stars': 'url(/bg-image.png)'
+        'stars': `url(${process.env.BASE_URL}/bg-image.png)`
       },
       keyframes: {
         'fade-in-up': {
