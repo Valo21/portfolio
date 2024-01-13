@@ -11,13 +11,13 @@ export default function EducationSection() : JSX.Element {
       <MotionCard >
         <div className='mb-4 font-semibold'>Portfolio</div>
         <Link className='transition-transform hover:scale-95 duration-300' href='https://portfolio-one-brown-28.vercel.app/'>
-          <Image className='rounded-lg' alt='Porfolio web page' src={`/projects/PORTFOLIO_CAPTURE.PNG`} width={550} height={100}/>
+          <Image className='rounded-lg' alt='Porfolio web page' src={`/projects/PORTFOLIO_CAPTURE.png`} width={550} height={100}/>
         </Link>
       </MotionCard>
       <MotionCard>
         <div className='mb-4 font-semibold'>Auth panel</div>
         <Link className='transition-transform hover:scale-95 duration-300' href='https://auth-panel.vercel.app/'>
-          <Image className='rounded-lg' alt='Auth panel web page' src={`/projects/PANEL_CAPTURE.PNG`} width={550} height={100}/>
+          <Image className='rounded-lg' alt='Auth panel web page' src={`/projects/PANEL_CAPTURE.png`} width={550} height={100}/>
         </Link>
       </MotionCard>
     </Section>
