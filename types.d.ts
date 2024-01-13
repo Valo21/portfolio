@@ -14,7 +14,7 @@ interface SectionState {
 
 interface EducationItem {
     name: string,
-    intituion: string,
+    institution: string,
     startYear: number,
     endYear: number,
     imageURL: string

@@ -7,7 +7,7 @@ export default function Section(props : SectionProps) {
   const ref = useRef<HTMLDivElement>(null)
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start end", "end end"]
+    offset: ['0 1', 'end']
   })
     
   return (
@@ -17,7 +17,6 @@ export default function Section(props : SectionProps) {
         className='text-center text-lg font-semibold mb-2'
         style={{
           opacity: scrollYProgress,
-          scale: scrollYProgress
         }}
       >
         <h1>

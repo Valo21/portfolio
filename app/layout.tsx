@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import ReduxProvider from '@/components/ReduxProvider'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-        <body className={`${inter.className} bg-stars`}>
+        <body className={`${inter.className} bg-stars bg-fixed`}>
           <ReduxProvider>
             <div className='bg-gradient-to-tr from-sky-950/40 bg-slate-950 bg-opacity-50'>
             {children}

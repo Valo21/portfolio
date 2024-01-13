@@ -5,21 +5,21 @@ export function GET(){
         const items = [
             {
                 name: 'Codo a Codo 4.0',
-                institution: 'Buenos Aires Goverment',
+                institution: 'Buenos Aires Autonomous City Goverment',
                 startYear: 2023,
                 endYear: 2023,
                 imageURL: 'CERTIFICADO_CAC4.png'
             },
             {
-                name: 'English course',
-                institution: 'CUI - UBA (Pearson)',
-                startYear: 2023,
-                endYear: 2022,
+                name: 'English Program',
+                institution: 'CUI - Unversity of Buenos Aires (Via Pearson Portal)',
+                startYear: 2022,
+                endYear: 2023,
                 imageURL: 'CERTIFICADO_INGLES.png'
             },
             {
-                name: 'Doctor in medicine',
-                institution: 'UNT',
+                name: 'Medical Doctor',
+                institution: 'University of Tucuman',
                 startYear: 2021,
                 endYear: 'Present',
                 imageURL: 'UNT-Logo.png'

@@ -3,8 +3,9 @@ import Link from 'next/link'
 import Card from '@/components/Card';
 import Navbar from '@/components/Navbar';
 import ProfilePicture from '@/components/ProfilePicture';
-import EducationSection from '@/components/EducationSection';
-import SkillsSection from '@/components/SkillsSection';
+import EducationSection from '@/components/sections/EducationSection';
+import SkillsSection from '@/components/sections/SkillsSection';
+import ProjectsSection from '@/components/sections/ProjectsSection';
 
 export const revalidate = 0;
 
@@ -48,17 +49,19 @@ export default async function Home() {
         <Card>
           <h1 className='text-center text-lg font-semibold mb-2'>About me</h1>
           <p className='text-justify'>
-            Hi! My name is Valentin, i'm mainly a ReactJS developer.
-            My story with coding started approximately in 2017 when i discovered the <Link href='https://www.lua.org/'>Lua</Link> language in the multiplayer game <Link href='https://multitheftauto.com/'>MTA San Andreas</Link>.
+            Hi! My name is Valentin, i'm a Fullstack Developer.
+            My story with coding started approximately in 2017 when i discovered the <Link className='underline' href='https://www.lua.org/about.html'>Lua</Link> language in the multiplayer game <Link className='underline' href='https://wiki.multitheftauto.com/wiki/Main_Page'>MTA San Andreas</Link>.
             I was immediately fascinated by all the things that i could do with only writing some lines of code so i spend some time self learning lua till in 2020-2021 i met Javascript.
-            I started learning from <Link href='https://www.codecademy.com/profiles/valentnFaciano2901023803'>Codecademy</Link> and then i continued self learning from internet and the documentation.
+            I started learning from <Link className='underline' href='https://www.codecademy.com/profiles/valentnFaciano2901023803'>Codecademy</Link> and then i continued self learning from the documentation and the internet.
             I'm also a med studed, in 2021 i started my degree in combination with a degree in Computer Engineering but i only spend a year in engineering so i left it and kept my coding life as a hobby.
-            In 2023 i did the Codo a Codo 4.0 course in Full Stack Development given by the goverment of Buenos Aires, Argentina, where i reaffirmed mi knowledge in JS, HTML, CSS and MYSQL.
+            In 2023 i did the Codo a Codo 4.0 course in Full Stack Development given by the goverment of Buenos Aires, where i reaffirmed my knowledge in JS, HTML, CSS and MYSQL.
             I've been learning some things of other languages like C, C++, C# and Phyton but the one that i really appreciate is Javascript.
           </p>  
         </Card>
         <SkillsSection skills={skills}/>
+        <ProjectsSection/>
         <EducationSection items={items}/>
+        <Link className='underline' href='https://github.com/Valo21/portfolio'>Source code of this page</Link>
       </main>
     </div>
   )
