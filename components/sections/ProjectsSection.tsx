@@ -30,7 +30,7 @@ export default function EducationSection() : JSX.Element {
       <MotionCard>
         <div className='mb-4 font-semibold'>AWS Albums</div>
         <Link className='transition-transform hover:scale-95 duration-300' href='http://aws-app-bucker.s3-website.us-east-2.amazonaws.com/'>
-          <Image className='rounded-lg' alt='AWS Albums' src={`/projects/AWS_CAPTURE.png`} width={550} height={100}/>
+          <Image className='rounded-lg' alt='AWS Albums' src={`/projects/AWS_CAPTURE.jpeg`} width={550} height={100}/>
         </Link>
       </MotionCard>
     </Section>
