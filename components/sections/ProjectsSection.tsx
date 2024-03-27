@@ -23,13 +23,14 @@ export default function EducationSection() : JSX.Element {
       <MotionCard>
         <div className='mb-4 font-semibold'>Tetris Game</div>
         <Link className='transition-transform hover:scale-95 duration-300' href='https://ng-tetris-latest.onrender.com/'>
-          <Image className='rounded-lg' alt='Auth panel web page' src={`/projects/TETRIS_CAPTURE.png`} width={550} height={100}/>
+          <Image className='rounded-lg' alt='Tetris game' src={`/projects/TETRIS_CAPTURE.png`} width={550} height={100}/>
         </Link>
       </MotionCard>
+      
       <MotionCard>
-        <div className='mb-4 font-semibold'>E-commerce</div>
-        <Link className='transition-transform hover:scale-95 duration-300' href='https://e-commerce-sn3w.onrender.com/'>
-          <Image className='rounded-lg' alt='Auth panel web page' src={`/projects/TETRIS_CAPTURE.png`} width={550} height={100}/>
+        <div className='mb-4 font-semibold'>AWS Albums</div>
+        <Link className='transition-transform hover:scale-95 duration-300' href='http://aws-app-bucker.s3-website.us-east-2.amazonaws.com/'>
+          <Image className='rounded-lg' alt='AWS Albums' src={`/projects/AWS_CAPTURE.png`} width={550} height={100}/>
         </Link>
       </MotionCard>
     </Section>
