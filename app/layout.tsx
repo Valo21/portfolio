@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import ThreeScene from "@/components/ThreeScene";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,9 +17,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-        <body className={`${inter.className} bg-stars bg-fixed`}>
+        <body className={`${inter.className}`}>
             <div className='bg-gradient-to-tr from-sky-950/40 bg-slate-950 bg-opacity-50'>
-            {children}
+              <ThreeScene/>
+              {children}
             </div>
         </body>
     </html>

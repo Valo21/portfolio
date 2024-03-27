@@ -6,6 +6,7 @@ import ProfilePicture from '@/components/ProfilePicture';
 import EducationSection from '@/components/sections/EducationSection';
 import SkillsSection from '@/components/sections/SkillsSection';
 import ProjectsSection from '@/components/sections/ProjectsSection';
+import ThreeScene from "@/components/ThreeScene";
 
 export const revalidate = 0;
 
@@ -56,7 +57,7 @@ export default async function Home() {
             I'm also a med studed, in 2021 i started my degree in combination with a degree in Computer Engineering but i only spend a year in engineering so i left it and kept my coding life as a hobby.
             In 2023 i did the Codo a Codo 4.0 course in Full Stack Development given by the goverment of Buenos Aires, where i reaffirmed my knowledge in JS, HTML, CSS and MYSQL.
             I've been learning some things of other languages like C, C++, C# and Phyton but the one that i really appreciate is Javascript.
-          </p>  
+          </p>
         </Card>
         <SkillsSection skills={skills}/>
         <ProjectsSection/>
